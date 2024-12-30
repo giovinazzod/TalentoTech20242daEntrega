@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Ecommerce</title>
+</head>
+
+<body>
+   <!--   Encabezado principal -->
+   <header>
+      <h1>Ecommerce</h1><!--  Titulo del sitio -->
+      <!--   icono del carrito , con enlace a la pagina del carrito -->
+      <a href="carrito.html" class="icono-carrito">🛒 <span id="contador-carrito">0</span></a>
+   </header>
+
+   <!--      Barra de navegacion principal -->
+   <nav>
+      <ul>
+         <li><a href="#">Inicio</a></li>
+         <li><a href="#">Productos</a></li>
+         <li><a href="#">Contacto</a></li>
+      </ul>
+   </nav>
+
+   <!--   sección de productos -->
+   <section id="productos" class="productos">
+
+      <article class="producto">
+         <h2>Smartphone X10</h2>
+         <img src="https://www.ingetekglobal.servisistemas.com.ve/fotosproductos/imagen_sn.jpg" alt="Smartphone X10"
+            width="200px">
+         <p>Smartphone de última generación con pantalla de 6.5 pulgadas, cámara de 48 MP y batería de 4000mAh.</p>
+         <p class="precio">$799</p>
+         <button onclick="agregarAlcarrito('Smartphone X10', 799)">Agregar</button>
+      </article>
+
+      <article class="producto">
+         <h2>Laptop Pro 15</h2>
+         <img src="https://www.ingetekglobal.servisistemas.com.ve/fotosproductos/imagen_sn.jpg" alt="Laptop Pro 15"
+            width="200px">
+         <p>Portátil de alto rendimiento con procesador i7, 16 GB de RAM y pantalla retina de 15 pulgadas.</p>
+         <p class="precio">$1299</p>
+         <button onclick="agregarAlcarrito('Laptop Pro 15', 1299)">Agregar</button>
+      </article>
+
+      <article class="producto">
+         <h2>Smartwatch V2</h2>
+         <img src="https://www.ingetekglobal.servisistemas.com.ve/fotosproductos/imagen_sn.jpg" alt="Smartwatch V2"
+            width="200px">
+         <p>Reloj inteligente con monitorización de salud, GPS integrado y compatibilidad con Android e iOS.</p>
+         <p class="precio">$199</p>
+         <button onclick="agregarAlcarrito('Smartwatch V2', 199)">Agregar</button>
+      </article>
+
+      <article class="producto">
+         <h2>Tablet Tab 10</h2>
+         <img src="https://www.ingetekglobal.servisistemas.com.ve/fotosproductos/imagen_sn.jpg" alt="Tablet Tab 10"
+            width="200px">
+         <p>Tableta de 10 pulgadas, 64 GB de almacenamiento y procesador octa-core. Ideal para el entretenimiento y
+            trabajo.</p>
+         <p class="precio">$499</p>
+         <button onclick="agregarAlcarrito('Tablet Tab 10', 499)">Agregar</button>
+      </article>
+
+      <article class="producto">
+         <h2>Cámara Digital</h2>
+         <img src="https://www.ingetekglobal.servisistemas.com.ve/fotosproductos/imagen_sn.jpg" alt="Cámara Digital"
+            width="200px">
+         <p>Cámara DSLR de 24 MP con lente 18-55mm, ideal para fotografía profesional y aficionados.</p>
+         <p class="precio">$899</p>
+         <button onclick="agregarAlcarrito('Cámara Digital', 899)">Agregar</button>
+      </article>
+
+      <article class="producto">
+         <h2>Auriculares JBL</h2>
+         <img src="https://www.ingetekglobal.servisistemas.com.ve/fotosproductos/imagen_sn.jpg" alt="Auriculares JBL"
+            width="200px">
+         <p>Auriculares con cancelación de ruido, bluetooth y hasta 20 horas de autonomía.</p>
+         <p class="precio">$159</p>
+         <button onclick="agregarAlcarrito('Auriculares JBL', 159)">Agregar</button>
+      </article>
+
+   </section>
+
+
+   <script src="./index.js"></script>
+
+</body>
+
+</html>
